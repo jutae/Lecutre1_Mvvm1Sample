@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         })
         // Event Handling
         this.increaseButton?.setOnClickListener {
+            // View Model 로 이벤트를 전달함.
             viewModel.onClickIncreaseButton()
         }
     }
